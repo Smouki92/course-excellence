@@ -1,6 +1,9 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Container, Nav, Navbar, Button, Card } from "react-bootstrap";
+import { Container, Nav, Navbar, Button, Card, Row, Col } from "react-bootstrap";
+import coolicon1 from '../src/img/coolicon1.jpeg';
+import coolicon2 from '../src/img/coolicon2.jpeg';
+import coolicon3 from '../src/img/coolicon3.jpeg';
 
 function App() {
   return (
@@ -26,17 +29,51 @@ function App() {
         </Navbar>
       </header>
 
-      <Card className="text-center">
-        <Container >
-        <Card.Text><h5>Online training</h5></Card.Text>
-        <Card.Title><h1>In-depth, demanding courses</h1></Card.Title>
-        <Card.Text><h4>We know how large objects will act, but things on a small scale just do not act that way.</h4></Card.Text>
-        <div>
+
+      <Container className="text-center" style={{ paddingTop: '4rem', }}>
+        <Card.Text ><h6>Online training</h6></Card.Text>
+        <Card.Title style={{ paddingTop: '2rem' }}><h1>In-depth, <br /> demanding <br /> courses</h1></Card.Title>
+        <Card.Text style={{ paddingTop: '1.5rem' }}><h4>We know how large objects will act, but things on a <br /> small scale just do not act that way.</h4></Card.Text>
+        <div style={{ paddingTop: '1rem' }}>
           <Button variant="primary" size="lg" className="me-3" >Get Quote Now</Button>
           <Button variant="outline-info" size="lg" >Learn More</Button>
         </div>
-        </Container>
-      </Card>
+      </Container>
+
+
+      <Container style={{ paddingTop: '7rem', paddingBotton: '2rem' }}>
+        <Row>
+          <Col>
+            <Card className="p-4" style={{ width: '18rem', height: '16rem' }} border="light" >
+              <Card.Img style={{ width: '4rem' }} src={coolicon1} />
+              <Card.Body>
+                <Card.Title>Evaluation Time</Card.Title>
+                <Card.Text>The gradual accumulation of information about atomic and small-scale behaviour...</Card.Text>
+              </Card.Body>
+            </Card>
+          </Col>
+
+          <Col>
+            <Card className="p-4" style={{ width: '18rem', height: '16rem' }} border="light" shadow-lg>
+              <Card.Img  style={{ width: '4rem' }} src={coolicon2} />
+              <Card.Body>
+                <Card.Title>Sales Planning</Card.Title>
+                <Card.Text>The gradual accumulation of information about atomic and small-scale behaviour...</Card.Text>
+              </Card.Body>
+            </Card>
+          </Col>
+
+          <Col>
+            <Card className="p-4" style={{ width: '18rem', height: '16rem' }} border="light" >
+              <Card.Img style={{ width: '4rem' }} src={coolicon3} />
+              <Card.Body>
+                <Card.Title>Lifetime access</Card.Title>
+                <Card.Text>The gradual accumulation of information about atomic and small-scale behaviour...</Card.Text>
+              </Card.Body>
+            </Card>
+          </Col>
+        </Row>
+      </Container>
     </>
   );
 }

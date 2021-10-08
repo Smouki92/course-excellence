@@ -6,12 +6,20 @@ import coolicon1 from '../src/img/coolicon1.jpeg';
 import coolicon2 from '../src/img/coolicon2.jpeg';
 import coolicon3 from '../src/img/coolicon3.jpeg';
 import coolicon4 from '../src/img/coolicon4.jpeg';
+import product1 from '../src/img/product1.jpeg';
+import product2 from '../src/img/product2.jpeg';
+import product3 from '../src/img/product3.jpeg';
+import product4 from '../src/img/product4.jpeg';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHeart, faShoppingCart, faEye } from '@fortawesome/free-solid-svg-icons';
+import Frame from '../src/img/Frame.jpeg';
 
 function App() {
   return (
     <>
-    <div style={{position: 'absolute', left: 0, top: 84, height: 485, right: '10%', background: '#FFDCD1'}} />
-    <div style={{position: 'absolute', left: '50%', top: 0, height: 440, right: 0, background: '#E2F5FF'}} />
+      <div style={{ position: 'absolute', left: 0, top: 84, height: 485, right: '15%', background: '#FFDCD1' }} />
+      <div style={{ position: 'absolute', left: '50%', top: 0, height: 440, right: 0, background: '#E2F5FF' }} />
+
       <Navbar expand="lg">
         <Container style={{ marginTop: '10px', marginBottom: '10px' }}>
           <Navbar.Brand href="#home">BrandName</Navbar.Brand>
@@ -24,7 +32,7 @@ function App() {
               <Nav.Link href="#contact">Contact</Nav.Link>
             </Nav>
             <Nav>
-              <Button variant="light" size="lg" className="me-4">Login</Button>
+              <Button variant="light" size="lg" className="me-4, text-primary">Login</Button>
               <Button variant="primary" size="lg" >JOIN US</Button>
             </Nav>
           </Navbar.Collapse>
@@ -44,7 +52,7 @@ function App() {
       </Container>
 
 
-      <Container style={{ paddingTop: '7rem', paddingBotton: '2rem' }}>
+      <Container style={{ paddingTop: '7rem' }}>
         <Row>
           <Col>
             <Card className="p-4" style={{ width: '18rem', height: '16rem' }} border="light" >
@@ -93,11 +101,44 @@ function App() {
       </Container>
 
 
-      <Container style={{ paddingTop: '8rem', paddingBotton: '5rem' }}>
+      <Container style={{ paddingTop: '8rem' }}>
         <Row>
           <h6 className="text-primary">Practice Advice</h6>
           <h2>Watch our Courses</h2>
           <p>Problems trying to resolv the conflict between <br /> the two major reaml of Classical physics: Newtonian mechanics</p>
+        </Row>
+      </Container>
+
+      <Container style={{ paddingTop: '6rem', paddingBottom: '10rem' }}>
+        <Row>
+
+          <Col>
+            <Card style={{ width: '240px' }} border="light">
+              <div style={{ position: 'relative', width: 240, height: 300 }}  >
+                <Card.Img src={product1} style={{ position: 'absolute' }} />
+                <div style={{ position: 'absolute', padding: '0px 10px', lineHeight: '24px', background: '#E74040', color: '#fff', fontWeight: 600, left: '8%', top: '8%', borderRadius: 4 }} >Sale</div>
+                <div className="d-flex position-absolute" style={{top: '78%', left: '15%', }} >
+                  <div className='rounded-circle bg-white p-2 bd-highlight ' style={{ width: 45, height: 45 }}><FontAwesomeIcon icon={faHeart} /></div>
+                  <div className='rounded-circle bg-white   ms-3 me-3' style={{ width: 45, height: 45, }} ><FontAwesomeIcon icon={faShoppingCart} /></div>
+                  <div className='rounded-circle bg-white  ' style={{ width: 45, height: 45 }}><FontAwesomeIcon icon={faEye} /></div>
+                </div>
+              </div>
+              <Card.Body>
+                <Card.Text className="text-primary">English</Card.Text>
+                <Card.Title>Graphic Design</Card.Title>
+                <Card.Text>We focus on ergonomics and meeting you...</Card.Text>
+                <Card.Text style={{ display: 'flex' }} >
+                  <Link href="#"> <img src={Frame} />  </Link>
+                  <h5 className="ms-3">Sales</h5>
+                </Card.Text>
+                <Card.Text >
+                  <h5><span style={{ color: '#BDBDBD' }}>$16.48</span>  <span style={{ color: '#40BB15' }}>$6.48</span> </h5>
+                </Card.Text>
+                <Button variant="outline-primary" style={{ borderRadius: 100 }} >Learn More &gt;</Button>
+              </Card.Body>
+            </Card>
+          </Col>
+
         </Row>
       </Container>
     </>

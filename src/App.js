@@ -117,10 +117,10 @@ function App() {
               <div style={{ position: 'relative', width: 240, height: 300 }}  >
                 <Card.Img src={product1} style={{ position: 'absolute' }} />
                 <div style={{ position: 'absolute', padding: '0px 10px', lineHeight: '24px', background: '#E74040', color: '#fff', fontWeight: 600, left: '8%', top: '8%', borderRadius: 4 }} >Sale</div>
-                <div className="d-flex position-absolute" style={{top: '78%', left: '15%', }} >
-                  <div className='rounded-circle bg-white p-2 bd-highlight ' style={{ width: 45, height: 45 }}><FontAwesomeIcon icon={faHeart} /></div>
-                  <div className='rounded-circle bg-white   ms-3 me-3' style={{ width: 45, height: 45, }} ><FontAwesomeIcon icon={faShoppingCart} /></div>
-                  <div className='rounded-circle bg-white  ' style={{ width: 45, height: 45 }}><FontAwesomeIcon icon={faEye} /></div>
+                <div className="d-flex justify-content-evenly position-relative" style={{ top: '80%' }} >
+                  <div className='rounded-circle bg-white position-relative' style={{ width: 45, height: 45 }}><FontAwesomeIcon icon={faHeart} className='position-absolute top-50 start-50 translate-middle' /></div>
+                  <div className='rounded-circle bg-white position-relative' style={{ width: 45, height: 45, }} ><FontAwesomeIcon icon={faShoppingCart} className='position-absolute top-50 start-50 translate-middle' /></div>
+                  <div className='rounded-circle bg-white position-relative' style={{ width: 45, height: 45 }}><FontAwesomeIcon icon={faEye} className='position-absolute top-50 start-50 translate-middle' /></div>
                 </div>
               </div>
               <Card.Body>
@@ -139,6 +139,86 @@ function App() {
             </Card>
           </Col>
 
+          <Col>
+            <Card style={{ width: '240px' }} border="light">
+              <div style={{ position: 'relative', width: 240, height: 300 }}  >
+                <Card.Img src={product2} style={{ position: 'absolute' }} />
+                <div style={{ position: 'absolute', padding: '0px 10px', lineHeight: '24px', background: '#E74040', color: '#fff', fontWeight: 600, left: '8%', top: '8%', borderRadius: 4 }} >Sale</div>
+                <div className="d-flex justify-content-evenly position-relative" style={{ top: '80%' }} >
+                  <div className='rounded-circle bg-white position-relative' style={{ width: 45, height: 45 }}><FontAwesomeIcon icon={faHeart} className='position-absolute top-50 start-50 translate-middle' /></div>
+                  <div className='rounded-circle bg-white position-relative' style={{ width: 45, height: 45, }} ><FontAwesomeIcon icon={faShoppingCart} className='position-absolute top-50 start-50 translate-middle' /></div>
+                  <div className='rounded-circle bg-white position-relative' style={{ width: 45, height: 45 }}><FontAwesomeIcon icon={faEye} className='position-absolute top-50 start-50 translate-middle' /></div>
+                </div>
+              </div>
+              <Card.Body>
+                <Card.Text className="text-primary">English</Card.Text>
+                <Card.Title>Graphic Design</Card.Title>
+                <Card.Text>We focus on ergonomics and meeting you...</Card.Text>
+                <Card.Text style={{ display: 'flex' }} >
+                  <Link href="#"> <img src={Frame} />  </Link>
+                  <h5 className="ms-3">Sales</h5>
+                </Card.Text>
+                <Card.Text >
+                  <h5><span style={{ color: '#BDBDBD' }}>$16.48</span>  <span style={{ color: '#40BB15' }}>$6.48</span> </h5>
+                </Card.Text>
+                <Button variant="outline-primary" style={{ borderRadius: 100 }} >Learn More &gt;</Button>
+              </Card.Body>
+            </Card>
+          </Col>
+
+          <Col>
+            <Card style={{ width: '240px' }} border="light">
+              <div style={{ position: 'relative', width: 240, height: 300 }}  >
+                <Card.Img src={product3} style={{ position: 'absolute' }} />
+                <div style={{ position: 'absolute', padding: '0px 10px', lineHeight: '24px', background: '#E74040', color: '#fff', fontWeight: 600, left: '8%', top: '8%', borderRadius: 4 }} >Sale</div>
+                <div className="d-flex justify-content-evenly position-relative" style={{ top: '80%' }} >
+                  <div className='rounded-circle bg-white position-relative' style={{ width: 45, height: 45 }}><FontAwesomeIcon icon={faHeart} className='position-absolute top-50 start-50 translate-middle' /></div>
+                  <div className='rounded-circle bg-white position-relative' style={{ width: 45, height: 45, }} ><FontAwesomeIcon icon={faShoppingCart} className='position-absolute top-50 start-50 translate-middle' /></div>
+                  <div className='rounded-circle bg-white position-relative' style={{ width: 45, height: 45 }}><FontAwesomeIcon icon={faEye} className='position-absolute top-50 start-50 translate-middle' /></div>
+                </div>
+              </div>
+              <Card.Body>
+                <Card.Text className="text-primary">English</Card.Text>
+                <Card.Title>Graphic Design</Card.Title>
+                <Card.Text>We focus on ergonomics and meeting you...</Card.Text>
+                <Card.Text style={{ display: 'flex' }} >
+                  <Link href="#"> <img src={Frame} />  </Link>
+                  <h5 className="ms-3">Sales</h5>
+                </Card.Text>
+                <Card.Text >
+                  <h5><span style={{ color: '#BDBDBD' }}>$16.48</span>  <span style={{ color: '#40BB15' }}>$6.48</span> </h5>
+                </Card.Text>
+                <Button variant="outline-primary" style={{ borderRadius: 100 }} >Learn More &gt;</Button>
+              </Card.Body>
+            </Card>
+          </Col>
+
+          <Col>
+            <Card style={{ width: '240px' }} border="light">
+              <div style={{ position: 'relative', width: 240, height: 300 }}  >
+                <Card.Img src={product4} style={{ position: 'absolute' }} />
+                <div style={{ position: 'absolute', padding: '0px 10px', lineHeight: '24px', background: '#E74040', color: '#fff', fontWeight: 600, left: '8%', top: '8%', borderRadius: 4 }} >Sale</div>
+                <div className="d-flex justify-content-evenly position-relative" style={{ top: '80%' }} >
+                  <div className='rounded-circle bg-white position-relative' style={{ width: 45, height: 45 }}><FontAwesomeIcon icon={faHeart} className='position-absolute top-50 start-50 translate-middle' /></div>
+                  <div className='rounded-circle bg-white position-relative' style={{ width: 45, height: 45, }} ><FontAwesomeIcon icon={faShoppingCart} className='position-absolute top-50 start-50 translate-middle' /></div>
+                  <div className='rounded-circle bg-white position-relative' style={{ width: 45, height: 45 }}><FontAwesomeIcon icon={faEye} className='position-absolute top-50 start-50 translate-middle' /></div>
+                </div>
+              </div>
+              <Card.Body>
+                <Card.Text className="text-primary">English</Card.Text>
+                <Card.Title>Graphic Design</Card.Title>
+                <Card.Text>We focus on ergonomics and meeting you...</Card.Text>
+                <Card.Text style={{ display: 'flex' }} >
+                  <Link href="#"> <img src={Frame} />  </Link>
+                  <h5 className="ms-3">Sales</h5>
+                </Card.Text>
+                <Card.Text >
+                  <h5><span style={{ color: '#BDBDBD' }}>$16.48</span>  <span style={{ color: '#40BB15' }}>$6.48</span> </h5>
+                </Card.Text>
+                <Button variant="outline-primary" style={{ borderRadius: 100 }} >Learn More &gt;</Button>
+              </Card.Body>
+            </Card>
+          </Col>
         </Row>
       </Container>
     </>

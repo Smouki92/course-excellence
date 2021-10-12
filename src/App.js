@@ -11,7 +11,7 @@ import product2 from '../src/img/product2.jpeg';
 import product3 from '../src/img/product3.jpeg';
 import product4 from '../src/img/product4.jpeg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHeart, faShoppingCart, faEye } from '@fortawesome/free-solid-svg-icons';
+import { faHeart, faShoppingCart, faEye, faStar } from '@fortawesome/free-solid-svg-icons';
 import Frame from '../src/img/Frame.jpeg';
 
 function App() {
@@ -59,6 +59,7 @@ function App() {
               <Card.Img style={{ width: '4rem' }} src={coolicon1} />
               <Card.Body>
                 <Card.Title>Evaluation Time</Card.Title>
+                <hr style={{ width: 50, height: 3, color: "#E74040" }} />
                 <Card.Text>The gradual accumulation of information about atomic and small-scale behaviour...</Card.Text>
               </Card.Body>
             </Card>
@@ -69,6 +70,7 @@ function App() {
               <Card.Img style={{ width: '4rem' }} src={coolicon2} />
               <Card.Body>
                 <Card.Title>Sales Planning</Card.Title>
+                <hr style={{ width: 50, height: 3, color: "#E74040" }} />
                 <Card.Text>The gradual accumulation of information about atomic and small-scale behaviour...</Card.Text>
               </Card.Body>
             </Card>
@@ -79,6 +81,7 @@ function App() {
               <Card.Img style={{ width: '4rem' }} src={coolicon3} />
               <Card.Body>
                 <Card.Title>Lifetime access</Card.Title>
+                <hr style={{ width: 50, height: 3, color: "#E74040" }} />
                 <Card.Text>The gradual accumulation of information about atomic and small-scale behaviour...</Card.Text>
               </Card.Body>
             </Card>
@@ -93,6 +96,7 @@ function App() {
             <img src={coolicon4} height={570} width={500} />
           </Col>
           <Col md={5} style={{ paddingTop: '6rem' }}>
+            <hr style={{ width: 97, height: 7, color: "#E74040", marginBottom: 30 }} />
             <h1>Make online <br /> education</h1>
             <p>Problems trying to resolve the confict between <br /> the two major realms of Classical physics: <br /> Newtonian mechanics</p>
             <Link href="#">Learn More &gt;</Link>
@@ -124,7 +128,10 @@ function App() {
                 </div>
               </div>
               <Card.Body>
-                <Card.Text className="text-primary">English</Card.Text>
+                <div className="d-flex justify-content-between">
+                <Card.Text className="text-primary ">English</Card.Text>
+                <div style={{ width: 50, height: 26 , background: '#252B42', borderRadius: 15, color: '#fff', fontWeight: 400 }} > <FontAwesomeIcon icon={faStar} style={{color: '#FFCE31'}} /> 4.8</div>
+                </div>
                 <Card.Title>Graphic Design</Card.Title>
                 <Card.Text>We focus on ergonomics and meeting you...</Card.Text>
                 <Card.Text style={{ display: 'flex' }} >
@@ -151,7 +158,10 @@ function App() {
                 </div>
               </div>
               <Card.Body>
-                <Card.Text className="text-primary">English</Card.Text>
+              <div className="d-flex justify-content-between">
+                <Card.Text className="text-primary ">English</Card.Text>
+                <div style={{ width: 50, height: 26 , background: '#252B42', borderRadius: 15, color: '#fff', fontWeight: 400 }} > <FontAwesomeIcon icon={faStar} style={{color: '#FFCE31'}} /> 4.8</div>
+                </div>
                 <Card.Title>Graphic Design</Card.Title>
                 <Card.Text>We focus on ergonomics and meeting you...</Card.Text>
                 <Card.Text style={{ display: 'flex' }} >
@@ -178,7 +188,10 @@ function App() {
                 </div>
               </div>
               <Card.Body>
-                <Card.Text className="text-primary">English</Card.Text>
+              <div className="d-flex justify-content-between">
+                <Card.Text className="text-primary ">English</Card.Text>
+                <div style={{ width: 50, height: 26 , background: '#252B42', borderRadius: 15, color: '#fff', fontWeight: 400 }} > <FontAwesomeIcon icon={faStar} style={{color: '#FFCE31'}} /> 4.8</div>
+                </div>
                 <Card.Title>Graphic Design</Card.Title>
                 <Card.Text>We focus on ergonomics and meeting you...</Card.Text>
                 <Card.Text style={{ display: 'flex' }} >
@@ -205,7 +218,10 @@ function App() {
                 </div>
               </div>
               <Card.Body>
-                <Card.Text className="text-primary">English</Card.Text>
+              <div className="d-flex justify-content-between">
+                <Card.Text className="text-primary ">English</Card.Text>
+                <div style={{ width: 50, height: 26 , background: '#252B42', borderRadius: 15, color: '#fff', fontWeight: 400 }} > <FontAwesomeIcon icon={faStar} style={{color: '#FFCE31'}} /> 4.8</div>
+                </div>
                 <Card.Title>Graphic Design</Card.Title>
                 <Card.Text>We focus on ergonomics and meeting you...</Card.Text>
                 <Card.Text style={{ display: 'flex' }} >
